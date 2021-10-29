@@ -1,10 +1,9 @@
 <script>
+  import { Router } from "svelte-router-spa";
+  import { routes } from "./routes";
+  console.log(routes);
 </script>
 
 <main>
-  <h1>Hello</h1>
-  <p>
-    Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
-    how to build Svelte apps.
-  </p>
+  <Router {routes} />
 </main>
