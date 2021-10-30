@@ -1,8 +1,11 @@
 <script>
   let myDate = new Date().getTime();
-  let schoolName = "Test School";
+  import { user } from "../../stores";
 </script>
 
 <div>
-  <h1 class="title is-4">Admin {schoolName} {myDate}</h1>
+  <h1 class="title is-4">
+    Admin is {$user.name} at {$user.schoolName}
+    {myDate}
+  </h1>
 </div>
