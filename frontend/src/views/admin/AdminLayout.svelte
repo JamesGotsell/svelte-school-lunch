@@ -14,7 +14,6 @@
 </script>
 
 <div>
-  Admin Layout
   {#if initialized}
     <Route {currentRoute} />
   {/if}
